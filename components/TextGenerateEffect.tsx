@@ -108,7 +108,7 @@ export const ContentGenerateEffect = memo(function ContentGenerateEffect({
         {
           duration: speed,
           delay: stagger(staggerChildren),
-          type: "spring",
+          type: "spring" as const,
           stiffness: 40,
           damping: 15,
         }

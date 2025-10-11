@@ -149,7 +149,7 @@ export default function Hero() {
                 transition={{
                   duration: 0.9,
                   delay: shapeAnimationDelay + 0.1,
-                  type: "spring",
+                  type: "spring" as const,
                   stiffness: 100,
                   damping: 20,
                 }}
@@ -203,7 +203,7 @@ export default function Hero() {
                       transition={{
                         duration: 0.6,
                         delay: shapeAnimationDelay + 0.8,
-                        type: "spring",
+                        type: "spring" as const,
                         stiffness: 100,
                         damping: 15,
                       }}
@@ -221,7 +221,7 @@ export default function Hero() {
                           transition={{
                             duration: 0.5,
                             delay: shapeAnimationDelay + 1.0,
-                            type: "spring",
+                            type: "spring" as const,
                             stiffness: 200,
                             damping: 15,
                           }}
