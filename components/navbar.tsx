@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 
@@ -26,8 +27,18 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-white font-bold text-2xl tracking-tighter">
-            MONO<span className="text-brand-orange">.</span>
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/ICON PNG-01.png"
+              alt="Logo"
+              width={40}
+              height={40}
+              className="h-8 md:h-10 w-auto"
+              priority
+            />
+            <span className="text-white font-bold text-xl md:text-2xl tracking-tighter">
+              IAROO<span className="text-brand-orange">.</span>
+            </span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
