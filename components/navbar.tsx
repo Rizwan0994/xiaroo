@@ -52,28 +52,39 @@ export default function Navbar() {
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link
-              href="#features"
+              href="/#features"
               className="text-white hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
+              title="Our Digital Solutions and Services"
             >
-              Features
+              Services
             </Link>
             <Link
-              href="#work"
+              href="/#work"
               className="text-white hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
+              title="View Our Portfolio and Case Studies"
             >
-              Work
+              Portfolio
             </Link>
             <Link
-              href="#process"
+              href="/#process"
               className="text-white hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
+              title="Our AI-Integrated Development Process"
             >
               Process
             </Link>
             <Link
-              href="#pricing"
+              href="/#pricing"
               className="text-white hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
+              title="Why Choose Xiaroo - Our Advantages"
             >
-              Pricing
+              Why Choose Us
+            </Link>
+            <Link
+              href="/#testimonials"
+              className="text-white hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
+              title="Client Success Stories"
+            >
+              Testimonials
             </Link>
           </nav>
 

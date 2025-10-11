@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { TextGenerateEffect } from "./TextGenerateEffect";
+import Breadcrumb from "./breadcrumb";
 
 export default function Hero() {
   const shapeRef = useRef<HTMLDivElement>(null);
@@ -39,6 +40,12 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
+        {/* Breadcrumb */}
+        <Breadcrumb items={[
+          { name: "Home", href: "/" },
+          { name: "Software Development", href: "/services" }
+        ]} />
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <motion.div
