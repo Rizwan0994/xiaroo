@@ -46,8 +46,8 @@ export default function Work() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-px w-12 bg-white/40"></div>
-            <div className="text-xs uppercase tracking-widest text-white/80">Selected Work</div>
+            <div className="h-px w-12 bg-brand-orange"></div>
+            <div className="text-xs uppercase tracking-widest text-brand-orange">Selected Work</div>
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 md:mb-0 text-white">

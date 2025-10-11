@@ -18,6 +18,15 @@ const config = {
     },
     extend: {
       colors: {
+        // Brand colors from logo
+        brand: {
+          dark: "#132442",
+          orange: "#fe701c",
+          "dark-light": "#1a2f52",
+          "dark-lighter": "#213a62",
+          "orange-light": "#ff8a3d",
+          "orange-dark": "#e65a0a",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

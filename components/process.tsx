@@ -37,7 +37,7 @@ export default function Process() {
   ]
 
   return (
-    <section id="process" className="py-24 relative overflow-hidden bg-[#0a0a0a]">
+    <section id="process" className="py-24 relative overflow-hidden bg-brand-dark">
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,8 +47,8 @@ export default function Process() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-px w-12 bg-white/40"></div>
-            <div className="text-xs uppercase tracking-widest text-white/80">How We Work</div>
+            <div className="h-px w-12 bg-brand-orange"></div>
+            <div className="text-xs uppercase tracking-widest text-brand-orange">How We Work</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
             Our Process
@@ -62,7 +62,7 @@ export default function Process() {
           className="relative"
         >
           {/* Vertical line with improved visibility */}
-          <div className="absolute left-[39px] top-0 bottom-0 w-[2px] bg-white/30 md:left-1/2"></div>
+          <div className="absolute left-[39px] top-0 bottom-0 w-[2px] bg-brand-orange/30 md:left-1/2"></div>
 
           {steps.map((step, index) => (
             <div
@@ -89,14 +89,14 @@ export default function Process() {
 
               <div className="relative flex items-center justify-center z-10 absolute-vertical-center md:static">
                 {/* Increase border contrast from 30% to 40% */}
-                <div className="w-20 h-20 border-2 border-white/40 flex items-center justify-center bg-[#0a0a0a] group-hover:border-white/60 transition-all duration-300">
+                <div className="w-20 h-20 border-2 border-brand-orange/40 flex items-center justify-center bg-brand-dark group-hover:border-brand-orange/60 transition-all duration-300">
                   <div className="text-xl font-bold text-white">{step.number}</div>
                 </div>
               </div>
 
               <div className="flex-1 hidden md:block">
                 {/* Increase horizontal line contrast from 20% to 30% */}
-                <div className="h-[2px] w-full bg-white/30"></div>
+                <div className="h-[2px] w-full bg-brand-orange/30"></div>
               </div>
             </div>
           ))}
@@ -104,8 +104,8 @@ export default function Process() {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-40 right-20 w-32 h-32 border border-white/10"></div>
-      <div className="absolute bottom-60 left-20 w-40 h-40 border border-white/5"></div>
+      <div className="absolute top-40 right-20 w-32 h-32 border border-brand-orange/10"></div>
+      <div className="absolute bottom-60 left-20 w-40 h-40 border border-brand-orange/5"></div>
 
       {/* Add custom styles for mobile positioning */}
       <style jsx>{`

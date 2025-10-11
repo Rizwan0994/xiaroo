@@ -50,7 +50,7 @@ export default function Pricing() {
   ]
 
   return (
-    <section id="pricing" className="py-24 relative overflow-hidden bg-[#0a0a0a]">
+    <section id="pricing" className="py-24 relative overflow-hidden bg-brand-dark">
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,8 +60,8 @@ export default function Pricing() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-px w-12 bg-white/40"></div>
-            <div className="text-xs uppercase tracking-widest text-white/80">Pricing</div>
+            <div className="h-px w-12 bg-brand-orange"></div>
+            <div className="text-xs uppercase tracking-widest text-brand-orange">Pricing</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
             Simple Pricing
@@ -71,11 +71,11 @@ export default function Pricing() {
         </motion.div>
 
         <div className="flex justify-center mb-12">
-          <div className="border-2 border-white/20 p-1 inline-flex rounded-sm backdrop-blur-sm bg-white/5">
+          <div className="border-2 border-brand-orange/20 p-1 inline-flex rounded-sm backdrop-blur-sm bg-brand-orange/5">
             <button
               onClick={() => setAnnual(true)}
               className={`px-6 py-2 text-sm transition-all duration-300 ${
-                annual ? "bg-white text-black font-medium" : "text-white/70 hover:text-white"
+                annual ? "bg-brand-orange text-white font-medium" : "text-gray-300 hover:text-brand-orange"
               }`}
             >
               Annual <span className="text-xs opacity-80">(Save 20%)</span>
@@ -83,7 +83,7 @@ export default function Pricing() {
             <button
               onClick={() => setAnnual(false)}
               className={`px-6 py-2 text-sm transition-all duration-300 ${
-                !annual ? "bg-white text-black font-medium" : "text-white/70 hover:text-white"
+                !annual ? "bg-brand-orange text-white font-medium" : "text-gray-300 hover:text-brand-orange"
               }`}
             >
               Monthly
@@ -96,11 +96,11 @@ export default function Pricing() {
             <div
               key={index}
               className={`border-2 ${
-                plan.popular ? "border-white" : "border-white/20"
-              } p-8 relative bg-white/5 backdrop-blur-sm group hover:bg-white/10 transition-all duration-300`}
+                plan.popular ? "border-brand-orange" : "border-brand-orange/20"
+              } p-8 relative bg-brand-orange/5 backdrop-blur-sm group hover:bg-brand-orange/10 transition-all duration-300`}
             >
               {plan.popular && (
-                <div className="absolute top-0 right-0 bg-white text-black text-xs uppercase tracking-widest py-1 px-3 -mt-3 -mr-3 font-medium">
+                <div className="absolute top-0 right-0 bg-brand-orange text-white text-xs uppercase tracking-widest py-1 px-3 -mt-3 -mr-3 font-medium">
                   Popular
                 </div>
               )}
@@ -121,8 +121,8 @@ export default function Pricing() {
               <button
                 className={`w-full py-3 text-sm uppercase tracking-widest transition-all duration-300 ${
                   plan.popular 
-                    ? "bg-white text-black hover:bg-white/90" 
-                    : "border-2 border-white/30 text-white hover:border-white hover:bg-white/10"
+                    ? "bg-brand-orange text-white hover:bg-brand-orange-light" 
+                    : "border-2 border-brand-orange/30 text-white hover:border-brand-orange hover:bg-brand-orange/10"
                 }`}
               >
                 {plan.cta}
@@ -130,7 +130,7 @@ export default function Pricing() {
               
               {/* Add subtle highlight for popular plan */}
               {plan.popular && (
-                <div className="absolute inset-0 border-b-2 border-white opacity-20"></div>
+                <div className="absolute inset-0 border-b-2 border-brand-orange opacity-20"></div>
               )}
             </div>
           ))}
@@ -138,8 +138,8 @@ export default function Pricing() {
       </div>
       
       {/* Decorative background elements */}
-      <div className="absolute top-40 left-10 w-32 h-32 border border-white/10"></div>
-      <div className="absolute bottom-20 right-10 w-48 h-48 border-2 border-white/5"></div>
+      <div className="absolute top-40 left-10 w-32 h-32 border border-brand-orange/10"></div>
+      <div className="absolute bottom-20 right-10 w-48 h-48 border-2 border-brand-orange/5"></div>
     </section>
   )
 }

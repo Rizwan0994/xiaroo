@@ -35,7 +35,7 @@ export default function Hero() {
   return (
     <section className="relative flex items-center px-10 py-[100px] sm:py-[110px] overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#222_0%,_#000_100%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#213a62_0%,_#132442_100%)]"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
@@ -47,7 +47,7 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="mb-6"
             >
-              <div className="inline-block border border-neutral-800 px-3 py-1 text-xs uppercase tracking-widest text-neutral-400">
+              <div className="inline-block border border-brand-orange px-3 py-1 text-xs uppercase tracking-widest text-brand-orange">
                 Digital Design Studio
               </div>
             </motion.div>
@@ -90,11 +90,11 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button className="border border-white px-8 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors flex items-center justify-center">
+              <button className="border border-brand-orange px-8 py-3 text-sm uppercase tracking-widest hover:bg-brand-orange hover:text-white transition-colors flex items-center justify-center">
                 View Our Work
                 <ArrowRight className="ml-2 h-4 w-4" />
               </button>
-              <button className="border border-neutral-800 px-8 py-3 text-sm uppercase tracking-widest text-neutral-400 hover:border-neutral-600 hover:text-white transition-colors">
+              <button className="border border-brand-dark-lighter px-8 py-3 text-sm uppercase tracking-widest text-gray-300 hover:border-brand-orange hover:text-white transition-colors">
                 About Us
               </button>
             </motion.div>
@@ -226,12 +226,12 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="absolute bottom-10 left-0 right-0 flex justify-center"
         >
-          <div className="flex items-center gap-8 border border-neutral-800 px-8 py-4">
-            <div className="text-xs uppercase tracking-widest text-neutral-400">
+          <div className="flex items-center gap-8 border border-brand-dark-lighter px-8 py-4">
+            <div className="text-xs uppercase tracking-widest text-gray-300">
               Scroll
             </div>
-            <div className="h-px w-10 bg-neutral-800"></div>
-            <div className="text-xs uppercase tracking-widest text-neutral-400">
+            <div className="h-px w-10 bg-brand-dark-lighter"></div>
+            <div className="text-xs uppercase tracking-widest text-gray-300">
               Discover
             </div>
           </div>

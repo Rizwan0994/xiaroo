@@ -87,7 +87,7 @@ export default function Features() {
     <section
       id="features"
       ref={sectionRef}
-      className="py-4 mt-20 sm:mt-0 sm:py-24 relative overflow-hidden bg-gradient-to-b from-black to-neutral-900"
+      className="py-4 mt-20 sm:mt-0 sm:py-24 relative overflow-hidden bg-gradient-to-b from-brand-dark to-brand-dark-lighter"
     >
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
@@ -97,8 +97,8 @@ export default function Features() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-px w-12 bg-white/40"></div>
-            <div className="text-xs uppercase tracking-widest text-white/80">
+            <div className="h-px w-12 bg-brand-orange"></div>
+            <div className="text-xs uppercase tracking-widest text-brand-orange">
               Our Approach
             </div>
           </div>
@@ -119,11 +119,11 @@ export default function Features() {
             <div
               key={index}
             
-              className="border-2 border-white/20 bg-white/5 backdrop-blur-sm p-8 hover:border-white/50 hover:bg-white/10 transition-all duration-300 group rounded-sm"
+              className="border-2 border-brand-orange/20 bg-brand-orange/5 backdrop-blur-sm p-8 hover:border-brand-orange/50 hover:bg-brand-orange/10 transition-all duration-300 group rounded-sm"
            
             >
               <div className="mb-6 text-white/80 group-hover:text-white transition-colors">
-                <div className="bg-white/10 p-3 inline-block rounded-sm group-hover:bg-white/20 transition-all duration-300">
+                <div className="bg-brand-orange/10 p-3 inline-block rounded-sm group-hover:bg-brand-orange/20 transition-all duration-300">
                   {feature.icon}
                 </div>
               </div>
@@ -138,8 +138,8 @@ export default function Features() {
         </motion.div>
       </div>
 
-      <div className="absolute top-20 right-10 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-10 w-60 h-60 bg-white/3 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 right-10 w-40 h-40 bg-brand-orange/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-10 w-60 h-60 bg-brand-orange/3 rounded-full blur-3xl"></div>
     </section>
   );
 }

@@ -21,44 +21,44 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/80 backdrop-blur-md py-3" : "bg-transparent py-5"
+        scrolled ? "bg-brand-dark/80 backdrop-blur-md py-3" : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-white font-bold text-2xl tracking-tighter">
-            MONO<span className="text-neutral-400">.</span>
+            MONO<span className="text-brand-orange">.</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="#features"
-              className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
+              className="text-gray-300 hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
             >
               Features
             </Link>
             <Link
               href="#work"
-              className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
+              className="text-gray-300 hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
             >
               Work
             </Link>
             <Link
               href="#process"
-              className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
+              className="text-gray-300 hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
             >
               Process
             </Link>
             <Link
               href="#pricing"
-              className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
+              className="text-gray-300 hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
             >
               Pricing
             </Link>
           </nav>
 
           <div className="hidden md:block">
-            <button className="border border-white px-5 py-2 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+            <button className="border border-brand-orange px-5 py-2 text-sm uppercase tracking-widest hover:bg-brand-orange hover:text-white transition-colors">
               Contact
             </button>
           </div>
@@ -75,39 +75,39 @@ export default function Navbar() {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-black"
+          className="md:hidden bg-brand-dark"
         >
           <div className="container mx-auto px-4 py-8">
             <nav className="flex flex-col space-y-6">
               <Link
                 href="#features"
-                className="text-neutral-400 hover:text-white py-2 text-2xl font-light"
+                className="text-gray-300 hover:text-brand-orange py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
                 Features
               </Link>
               <Link
                 href="#work"
-                className="text-neutral-400 hover:text-white py-2 text-2xl font-light"
+                className="text-gray-300 hover:text-brand-orange py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
                 Work
               </Link>
               <Link
                 href="#process"
-                className="text-neutral-400 hover:text-white py-2 text-2xl font-light"
+                className="text-gray-300 hover:text-brand-orange py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
                 Process
               </Link>
               <Link
                 href="#pricing"
-                className="text-neutral-400 hover:text-white py-2 text-2xl font-light"
+                className="text-gray-300 hover:text-brand-orange py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
                 Pricing
               </Link>
-              <button className="border border-white px-5 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full mt-4">
+              <button className="border border-brand-orange px-5 py-3 text-sm uppercase tracking-widest hover:bg-brand-orange hover:text-white transition-colors w-full mt-4">
                 Contact
               </button>
             </nav>

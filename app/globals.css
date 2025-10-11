@@ -4,25 +4,26 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 3%;
-    --card-foreground: 0 0% 100%;
-    --popover: 0 0% 3%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 0 0% 100%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
-    --accent: 0 0% 20%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 0 0% 100%;
+    /* Brand colors - Dark Blue primary theme */
+    --background: 218 55% 17%; /* brand-dark #132442 */
+    --foreground: 0 0% 100%; /* white */
+    --card: 218 55% 20%; /* slightly lighter dark blue */
+    --card-foreground: 0 0% 100%; /* white */
+    --popover: 218 55% 20%; /* slightly lighter dark blue */
+    --popover-foreground: 0 0% 100%; /* white */
+    --primary: 22 99% 55%; /* brand-orange #fe701c */
+    --primary-foreground: 0 0% 100%; /* white */
+    --secondary: 218 55% 25%; /* medium dark blue */
+    --secondary-foreground: 0 0% 100%; /* white */
+    --muted: 218 55% 30%; /* lighter dark blue */
+    --muted-foreground: 0 0% 70%; /* light gray */
+    --accent: 22 99% 55%; /* brand-orange #fe701c */
+    --accent-foreground: 0 0% 100%; /* white */
+    --destructive: 0 100% 50%; /* red for errors */
+    --destructive-foreground: 0 0% 100%; /* white */
+    --border: 218 55% 30%; /* lighter dark blue for borders */
+    --input: 218 55% 25%; /* medium dark blue for inputs */
+    --ring: 22 99% 55%; /* brand-orange for focus rings */
     --radius: 0rem;
   }
 }
@@ -99,14 +100,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: #132442; /* brand-dark */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #213a62; /* brand-dark-lighter */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #fe701c; /* brand-orange */
 }
  

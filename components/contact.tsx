@@ -22,8 +22,8 @@ export default function Contact() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <div className="h-px w-12 bg-white/40"></div>
-            <div className="text-xs uppercase tracking-widest text-white/80">
+            <div className="h-px w-12 bg-brand-orange"></div>
+            <div className="text-xs uppercase tracking-widest text-brand-orange">
               Contact
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Contact() {
               <input
                 type="text"
                 id="name"
-                className="w-full bg-white/5 border-2 border-white/20 p-3 text-white placeholder:text-white/30 focus:border-white focus:outline-none transition-colors"
+                className="w-full bg-brand-dark-lighter/50 border-2 border-brand-orange/20 p-3 text-white placeholder:text-gray-400 focus:border-brand-orange focus:outline-none transition-colors"
                 placeholder="Your name"
               />
             </div>
@@ -60,7 +60,7 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
-                className="w-full bg-white/5 border-2 border-white/20 p-3 text-white placeholder:text-white/30 focus:border-white focus:outline-none transition-colors"
+                className="w-full bg-brand-dark-lighter/50 border-2 border-brand-orange/20 p-3 text-white placeholder:text-gray-400 focus:border-brand-orange focus:outline-none transition-colors"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -74,16 +74,16 @@ export default function Contact() {
               <textarea
                 id="message"
                 rows={5}
-                className="w-full bg-white/5 border-2 border-white/20 p-3 text-white placeholder:text-white/30 focus:border-white focus:outline-none transition-colors"
+                className="w-full bg-brand-dark-lighter/50 border-2 border-brand-orange/20 p-3 text-white placeholder:text-gray-400 focus:border-brand-orange focus:outline-none transition-colors"
                 placeholder="Tell us about your project..."
               ></textarea>
             </div>
-            <button className="w-full bg-white text-black py-3 text-sm uppercase tracking-widest hover:bg-white/90 transition-colors relative group overflow-hidden">
+            <button className="w-full bg-brand-orange text-white py-3 text-sm uppercase tracking-widest hover:bg-brand-orange-light transition-colors relative group overflow-hidden">
               <span className="relative z-10">Send Message</span>
-              <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+              <span className="absolute inset-0 bg-brand-orange-dark translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
             </button>
           </form>
-          <div className="border-2 border-white/20 bg-white/5 backdrop-blur-sm p-8 h-full">
+          <div className="border-2 border-brand-orange/20 bg-brand-orange/5 backdrop-blur-sm p-8 h-full">
             <h3 className="text-2xl font-bold mb-6 text-white">
               Contact Information
             </h3>
