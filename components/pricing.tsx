@@ -50,7 +50,7 @@ export default function Pricing() {
   ]
 
   return (
-    <section id="pricing" className="py-24 relative overflow-hidden bg-brand-dark">
+    <section id="pricing" className="py-24 relative overflow-hidden bg-gradient-to-b from-brand-dark to-brand-dark-light">
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -96,8 +96,8 @@ export default function Pricing() {
             <div
               key={index}
               className={`border-2 ${
-                plan.popular ? "border-brand-orange" : "border-brand-orange/20"
-              } p-8 relative bg-brand-orange/5 backdrop-blur-sm group hover:bg-brand-orange/10 transition-all duration-300`}
+                plan.popular ? "border-brand-orange shadow-xl" : "border-brand-orange/20"
+              } p-8 relative bg-gradient-to-br from-brand-orange/8 to-brand-orange/3 backdrop-blur-sm group hover:bg-gradient-to-br hover:from-brand-orange/12 hover:to-brand-orange/6 hover:border-brand-orange/40 transition-all duration-300 shadow-lg`}
             >
               {plan.popular && (
                 <div className="absolute top-0 right-0 bg-brand-orange text-white text-xs uppercase tracking-widest py-1 px-3 -mt-3 -mr-3 font-medium">
@@ -140,6 +140,9 @@ export default function Pricing() {
       {/* Decorative background elements */}
       <div className="absolute top-40 left-10 w-32 h-32 border border-brand-orange/10"></div>
       <div className="absolute bottom-20 right-10 w-48 h-48 border-2 border-brand-orange/5"></div>
+      
+      {/* Section divider */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-orange/30 to-transparent"></div>
     </section>
   )
 }

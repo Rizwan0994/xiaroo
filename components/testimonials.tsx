@@ -37,7 +37,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-gradient-to-b from-brand-dark-lighter to-brand-dark">
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,7 +58,7 @@ export default function Testimonials() {
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="relative border-2 border-brand-orange/20 p-8 md:p-12 bg-brand-orange/5 backdrop-blur-sm">
+          <div className="relative border-2 border-brand-orange/30 p-8 md:p-12 bg-gradient-to-br from-brand-orange/10 to-brand-orange/5 backdrop-blur-sm shadow-2xl">
             <div className="absolute top-6 right-8 text-white/10 opacity-60">
               <Quote size={120} />
             </div>
@@ -127,6 +127,9 @@ export default function Testimonials() {
       {/* Visual accent elements */}
       <div className="absolute top-40 right-20 w-56 h-56 border border-brand-orange/5"></div>
       <div className="absolute bottom-20 left-10 w-32 h-32 border-2 border-brand-orange/10"></div>
+      
+      {/* Section divider */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-orange/30 to-transparent"></div>
     </section>
   )
 }

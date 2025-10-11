@@ -87,7 +87,7 @@ export default function Features() {
     <section
       id="features"
       ref={sectionRef}
-      className="py-4 mt-20 sm:mt-0 sm:py-24 relative overflow-hidden bg-gradient-to-b from-brand-dark to-brand-dark-lighter"
+      className="py-4 mt-20 sm:mt-0 sm:py-24 relative overflow-hidden bg-gradient-to-b from-brand-dark to-brand-dark-light"
     >
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
@@ -119,7 +119,7 @@ export default function Features() {
             <div
               key={index}
             
-              className="border-2 border-brand-orange/20 bg-brand-orange/5 backdrop-blur-sm p-8 hover:border-brand-orange/50 hover:bg-brand-orange/10 transition-all duration-300 group rounded-sm"
+              className="border-2 border-brand-orange/20 bg-gradient-to-br from-brand-orange/8 to-brand-orange/3 backdrop-blur-sm p-8 hover:border-brand-orange/50 hover:bg-gradient-to-br hover:from-brand-orange/12 hover:to-brand-orange/6 transition-all duration-300 group rounded-sm shadow-lg hover:shadow-xl"
            
             >
               <div className="mb-6 text-white/80 group-hover:text-white transition-colors">
@@ -140,6 +140,9 @@ export default function Features() {
 
       <div className="absolute top-20 right-10 w-40 h-40 bg-brand-orange/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-60 h-60 bg-brand-orange/3 rounded-full blur-3xl"></div>
+      
+      {/* Section divider */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-orange/30 to-transparent"></div>
     </section>
   );
 }

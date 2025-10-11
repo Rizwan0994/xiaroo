@@ -12,7 +12,9 @@ import {
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
+    <section id="contact" className="py-24 relative overflow-hidden bg-gradient-to-b from-brand-dark-light to-brand-dark">
+      {/* Top section divider */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-orange/30 to-transparent"></div>
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -83,7 +85,7 @@ export default function Contact() {
               <span className="absolute inset-0 bg-brand-orange-dark translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
             </button>
           </form>
-          <div className="border-2 border-brand-orange/20 bg-brand-orange/5 backdrop-blur-sm p-8 h-full">
+          <div className="border-2 border-brand-orange/20 bg-gradient-to-br from-brand-orange/10 to-brand-orange/5 backdrop-blur-sm p-8 h-full shadow-lg">
             <h3 className="text-2xl font-bold mb-6 text-white">
               Contact Information
             </h3>
@@ -147,24 +149,24 @@ export default function Contact() {
                 <div className="flex gap-4">
                   <a
                     href="#"
-                    className="bg-white/10 p-2 rounded-sm hover:bg-white/20 transition-colors group"
+                    className="bg-brand-orange/10 p-2 rounded-sm hover:bg-brand-orange/20 transition-colors group"
                     aria-label="Follow us on Instagram"
                   >
-                    <Instagram className="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />
+                    <Instagram className="w-5 h-5 text-gray-300 group-hover:text-brand-orange transition-colors" />
                   </a>
                   <a
                     href="#"
-                    className="bg-white/10 p-2 rounded-sm hover:bg-white/20 transition-colors group"
+                    className="bg-brand-orange/10 p-2 rounded-sm hover:bg-brand-orange/20 transition-colors group"
                     aria-label="Follow us on Twitter"
                   >
-                    <Twitter className="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />
+                    <Twitter className="w-5 h-5 text-gray-300 group-hover:text-brand-orange transition-colors" />
                   </a>
                   <a
                     href="#"
-                    className="bg-white/10 p-2 rounded-sm hover:bg-white/20 transition-colors group"
+                    className="bg-brand-orange/10 p-2 rounded-sm hover:bg-brand-orange/20 transition-colors group"
                     aria-label="Connect with us on LinkedIn"
                   >
-                    <Linkedin className="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />
+                    <Linkedin className="w-5 h-5 text-gray-300 group-hover:text-brand-orange transition-colors" />
                   </a>
                 </div>
               </div>

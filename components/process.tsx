@@ -37,7 +37,7 @@ export default function Process() {
   ]
 
   return (
-    <section id="process" className="py-24 relative overflow-hidden bg-brand-dark">
+    <section id="process" className="py-24 relative overflow-hidden bg-gradient-to-b from-brand-dark to-brand-dark-lighter">
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -106,6 +106,9 @@ export default function Process() {
       {/* Decorative elements */}
       <div className="absolute top-40 right-20 w-32 h-32 border border-brand-orange/10"></div>
       <div className="absolute bottom-60 left-20 w-40 h-40 border border-brand-orange/5"></div>
+      
+      {/* Section divider */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-orange/30 to-transparent"></div>
 
       {/* Add custom styles for mobile positioning */}
       <style jsx>{`

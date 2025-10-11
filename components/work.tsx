@@ -36,7 +36,7 @@ export default function Work() {
   ]
 
   return (
-    <section id="work" className="py-24 relative overflow-hidden">
+    <section id="work" className="py-24 relative overflow-hidden bg-gradient-to-b from-brand-dark-light to-brand-dark">
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -101,8 +101,11 @@ export default function Work() {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-40 right-0 w-32 h-32 border border-white/10"></div>
-      <div className="absolute bottom-20 left-0 w-48 h-48 border border-white/5"></div>
+      <div className="absolute top-40 right-0 w-32 h-32 border border-brand-orange/10"></div>
+      <div className="absolute bottom-20 left-0 w-48 h-48 border border-brand-orange/5"></div>
+      
+      {/* Section divider */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-orange/30 to-transparent"></div>
     </section>
   )
 }
