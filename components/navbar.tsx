@@ -27,18 +27,18 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center">
             <Image
               src="/ICON PNG-01.png"
               alt="Logo"
-              width={40}
-              height={40}
+              width={180}
+              height={180}
               className="h-8 md:h-10 w-auto"
               priority
             />
-            <span className="text-white font-bold text-xl md:text-2xl tracking-tighter">
-              IAROO<span className="text-brand-orange">.</span>
-            </span>
+            <Link href="/" className="text-white font-bold text-2xl tracking-tighter">
+            IAROO<span className="text-brand-orange">.</span>
+            </Link>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
