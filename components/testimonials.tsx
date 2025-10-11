@@ -10,28 +10,28 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote:
-        "XIAROO transformed our fintech platform with AI-powered fraud detection that caught 99.8% of suspicious transactions. Their Gen Z team understood modern tech stacks and delivered a scalable solution that handles millions of transactions daily. Best investment we've made.",
+        "Xiaroo transformed our fintech platform with automated fraud detection that caught 99.8% of suspicious transactions. Their Gen Z team understood modern tech stacks and delivered a scalable solution that handles millions of transactions daily. Best investment we've made.",
       author: "David Martinez",
       role: "CTO, FinTech Innovations",
       company: "USA",
     },
     {
       quote:
-        "Working with XIAROO was a game-changer for our healthcare app. They integrated AI diagnostics that improved accuracy by 40% while maintaining HIPAA compliance. Their agile approach and modern development practices exceeded all our expectations.",
+        "Working with Xiaroo was a game-changer for our healthcare app. They integrated AI diagnostics that improved accuracy by 40% while maintaining HIPAA compliance. Their agile approach and modern development practices exceeded all our expectations.",
       author: "Dr. Sarah Williams",
       role: "CEO, HealthTech Solutions",
       company: "UK",
     },
     {
       quote:
-        "The e-commerce platform XIAROO built for us increased our revenue by 250% in just 6 months. Their AI recommendation engine is incredibly accurate, and the performance optimization reduced our page load time by 65%. Simply outstanding work.",
+        "The e-commerce platform Xiaroo built for us increased our revenue by 250% in just 6 months. Their AI recommendation engine is incredibly accurate, and the performance optimization reduced our page load time by 65%. Simply outstanding work.",
       author: "James Thompson",
       role: "Founder, RetailNext",
       company: "Australia",
     },
     {
       quote:
-        "XIAROO's AI-powered learning platform revolutionized our EdTech business. Their innovative approach to personalized learning paths and real-time analytics helped us achieve 90% student completion rates. The Gen Z perspective brought fresh ideas we never considered.",
+        "Xiaroo's smart learning platform revolutionized our EdTech business. Their innovative approach to personalized learning paths and real-time analytics helped us achieve 90% student completion rates. The Gen Z perspective brought fresh ideas we never considered.",
       author: "Fatima Khan",
       role: "Director, EduVision",
       company: "Pakistan",
@@ -65,7 +65,7 @@ export default function Testimonials() {
             <br />
             <span className="text-white/70">Stories Worldwide</span>
           </h2>
-          <p className="text-gray-400 mt-4 max-w-2xl">Real results from real clients across USA, UK, Pakistan, and Australia who trusted XIAROO to transform their businesses with AI-powered solutions.</p>
+          <p className="text-gray-400 mt-4 max-w-2xl">Real results from real clients worldwide who trusted Xiaroo to transform their businesses with smart solutions.</p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">

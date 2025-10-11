@@ -8,12 +8,12 @@ import type { Metadata } from 'next'; // Import Metadata type
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "XIAROO - AI-Powered Software Development Company | Web & Mobile Apps",
-  description: "Leading Gen Z software development company specializing in AI-powered web applications, mobile apps, and scalable digital solutions. Serving USA, UK, Pakistan & Australia.",
+  title: "Xiaroo - Smart Software Development Company | Web & Mobile Apps",
+  description: "Leading Gen Z software development company specializing in advanced web applications, mobile apps, and scalable digital solutions. Serving clients worldwide.",
   keywords: "AI software development, custom web applications, mobile app development, software company, Gen Z developers, scalable software solutions, artificial intelligence integration, USA, UK, Pakistan, Australia",
-  authors: [{ name: "XIAROO Team" }],
-  creator: "XIAROO",
-  publisher: "XIAROO",
+  authors: [{ name: "Xiaroo Team" }],
+  creator: "Xiaroo",
+  publisher: "Xiaroo",
   formatDetection: {
     email: false,
     address: false,
@@ -44,22 +44,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://xiaroo.com',
-    siteName: 'XIAROO',
-    title: 'XIAROO - AI-Powered Software Development Company',
-    description: 'Leading Gen Z software development company specializing in AI-powered web applications, mobile apps, and scalable digital solutions.',
+    siteName: 'Xiaroo',
+    title: 'Xiaroo - Intelligent Software Development Company',
+    description: 'Leading Gen Z software development company specializing in intelligent web applications, mobile apps, and scalable digital solutions.',
     images: [
       {
         url: '/image.png',
         width: 1200,
         height: 630,
-        alt: 'XIAROO - AI-Powered Software Development Company',
+        alt: 'Xiaroo - Intelligent Software Development Company',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XIAROO - AI-Powered Software Development Company',
-    description: 'Leading Gen Z software development company specializing in AI-powered web applications, mobile apps, and scalable digital solutions.',
+    title: 'Xiaroo - Intelligent Software Development Company',
+    description: 'Leading Gen Z software development company specializing in intelligent web applications, mobile apps, and scalable digital solutions.',
     images: ['/image.png'],
   },
   verification: {
@@ -80,14 +80,14 @@ export default function RootLayout({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "XIAROO",
+    "name": "Xiaroo",
     "url": "https://xiaroo.com",
     "logo": "https://xiaroo.com/LOGO PNG-01.png",
-    "description": "Leading Gen Z software development company specializing in AI-powered web applications, mobile apps, and scalable digital solutions.",
+    "description": "Leading Gen Z software development company specializing in intelligent web applications, mobile apps, and scalable digital solutions.",
     "foundingDate": "2024",
     "founder": {
       "@type": "Person",
-      "name": "XIAROO Team"
+      "name": "Xiaroo Team"
     },
     "address": [
       {
@@ -113,7 +113,7 @@ export default function RootLayout({
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+1-555-XIAROO",
+      "telephone": "+1-555-Xiaroo",
       "contactType": "customer service",
       "availableLanguage": ["English"]
     },
@@ -145,7 +145,7 @@ export default function RootLayout({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "XIAROO",
+    "name": "Xiaroo",
     "url": "https://xiaroo.com",
     "potentialAction": {
       "@type": "SearchAction",

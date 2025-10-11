@@ -45,7 +45,7 @@ export default function Navbar() {
                 priority
               />
               <span className="text-white font-bold text-xl md:text-2xl tracking-tighter drop-shadow-2xl">
-                XIAROO<span className="text-brand-orange drop-shadow-lg">.</span>
+                iaroo<span className="text-brand-orange drop-shadow-lg">.</span>
               </span>
             </div>
           </Link>

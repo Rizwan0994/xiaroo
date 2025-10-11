@@ -48,7 +48,7 @@ export default function Hero() {
               className="mb-6"
             >
               <div className="inline-block border border-brand-orange px-3 py-1 text-xs uppercase tracking-widest text-brand-orange">
-                AI-Powered Software Development
+                Cutting-Edge Software Development
               </div>
             </motion.div>
             <h1>
@@ -59,13 +59,21 @@ export default function Hero() {
                 speed={0.2}
                 initialDelay={0.2}
               />
-              <TextGenerateEffect
-                words="AI-POWERED"
-                className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter text-brand-orange"
-                duration={0.5}
-                speed={0.2}
-                initialDelay={0.4}
-              />
+              <div className="relative inline-block group">
+                {/* Spotlight effect - constrained to text area only */}
+                <div className="absolute inset-0 bg-gradient-radial from-brand-orange/30 via-brand-orange/15 to-transparent rounded-full blur-lg scale-110"></div>
+                <div className="absolute inset-0 bg-gradient-radial from-brand-orange/20 via-brand-orange/10 to-transparent rounded-full blur-md scale-110 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
+                <div className="relative z-10">
+                  <TextGenerateEffect
+                    words="AI-POWERED"
+                    className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter text-brand-orange neon-glow"
+                    duration={0.5}
+                    speed={0.2}
+                    initialDelay={0.4}
+                  />
+                </div>
+              </div>
               <TextGenerateEffect
                 words="SOLUTIONS"
                 className="text-5xl md:text-7xl lg:text-8xl font-bold m-2 leading-tight tracking-tighter"
@@ -81,8 +89,8 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-gray-300 mb-8 max-w-lg text-lg"
             >
-              Leading Gen Z software development company specializing in AI-powered web applications, 
-              mobile apps, and scalable digital solutions. Serving USA, UK, Pakistan & Australia with cutting-edge technology.
+              Leading Gen Z software development company specializing in advanced web applications, 
+              mobile apps, and scalable digital platforms. Serving clients worldwide with cutting-edge technology.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -95,7 +103,7 @@ export default function Hero() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </button>
               <button className="border border-brand-dark-lighter px-8 py-3 text-sm uppercase tracking-widest text-gray-300 hover:border-brand-orange hover:text-brand-orange transition-colors">
-                Get AI Assessment
+                Get Free Consultation
               </button>
             </motion.div>
           </div>
@@ -156,25 +164,25 @@ export default function Hero() {
                   >
                     {/* Four lines - animate in sequence */}
                     <motion.div
-                      className="absolute top-0 left-0 w-full h-1 bg-brand-orange"
+                      className="absolute top-0 left-0 w-full h-1 bg-brand-orange neon-line-glow"
                       initial={{ scaleX: 0, originX: 0 }}
                       animate={{ scaleX: 1 }}
                       transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.4 }}
                     ></motion.div>
                     <motion.div
-                      className="absolute bottom-0 right-0 w-full h-1 bg-brand-orange"
+                      className="absolute bottom-0 right-0 w-full h-1 bg-brand-orange neon-line-glow"
                       initial={{ scaleX: 0, originX: 1 }}
                       animate={{ scaleX: 1 }}
                       transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.5 }}
                     ></motion.div>
                     <motion.div
-                      className="absolute top-0 right-0 h-full w-1 bg-brand-orange"
+                      className="absolute top-0 right-0 h-full w-1 bg-brand-orange neon-line-glow"
                       initial={{ scaleY: 0, originY: 0 }}
                       animate={{ scaleY: 1 }}
                       transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.6 }}
                     ></motion.div>
                     <motion.div
-                      className="absolute bottom-0 left-0 h-full w-1 bg-brand-orange"
+                      className="absolute bottom-0 left-0 h-full w-1 bg-brand-orange neon-line-glow"
                       initial={{ scaleY: 0, originY: 1 }}
                       animate={{ scaleY: 1 }}
                       transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.7 }}
@@ -200,7 +208,7 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.9 }}
                       >
                         <motion.div
-                          className="w-1/2 h-1/2 bg-brand-orange"
+                          className="w-1/2 h-1/2 bg-brand-orange neon-square-glow"
                           initial={{ opacity: 0, scale: 0 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{

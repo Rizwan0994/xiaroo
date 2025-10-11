@@ -166,7 +166,7 @@ export default function Contact() {
               Get In Touch
             </h3>
             <p className="text-gray-400 mb-8 text-sm">
-              Our Gen Z development team is ready to discuss your project and provide expert guidance on AI-powered solutions.
+              Our Gen Z development team is ready to discuss your project and provide expert guidance on smart solutions.
             </p>
             <div className="space-y-6">
               <div className="flex items-start">

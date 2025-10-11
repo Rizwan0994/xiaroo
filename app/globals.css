@@ -110,4 +110,17 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #fe701c; /* brand-orange */
 }
+
+/* Subtle Orange Glow Effects - Very Minimal */
+.neon-glow {
+  text-shadow: 0 0 2px rgba(254, 112, 28, 0.3);
+}
+
+.neon-line-glow {
+  box-shadow: 0 0 1px rgba(254, 112, 28, 0.2);
+}
+
+.neon-square-glow {
+  box-shadow: 0 0 2px rgba(254, 112, 28, 0.3);
+}
  

@@ -16,7 +16,7 @@ export default function Process() {
     {
       number: "02",
       title: "Strategy & Architecture",
-      description: "We design scalable, maintainable system architecture with AI-powered features. Our strategy includes tech stack selection, microservices planning, and cloud infrastructure design aligned with your growth goals.",
+      description: "We design scalable, maintainable system architecture with smart features. Our strategy includes tech stack selection, microservices planning, and cloud infrastructure design aligned with your growth goals.",
     },
     {
       number: "03",
@@ -54,7 +54,7 @@ export default function Process() {
             <br />
             <span className="text-white/90">Development Process</span>
           </h2>
-          <p className="text-gray-400 mt-4 max-w-2xl">From discovery to deployment, our agile workflow combines Gen Z innovation with AI-powered efficiency to deliver scalable, maintainable solutions.</p>
+          <p className="text-gray-400 mt-4 max-w-2xl">From discovery to deployment, our agile workflow combines Gen Z innovation with automated efficiency to deliver scalable, maintainable solutions.</p>
         </motion.div>
 
         <div

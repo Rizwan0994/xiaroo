@@ -23,7 +23,7 @@ export default function Pricing() {
       popular: false,
     },
     {
-      name: "AI-Powered Solutions",
+      name: "Smart Solutions",
       description: "Intelligence built into every product",
       icon: "🤖",
       features: [
@@ -66,14 +66,14 @@ export default function Pricing() {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-brand-orange"></div>
-            <div className="text-xs uppercase tracking-widest text-brand-orange">Why Choose XIAROO</div>
+            <div className="text-xs uppercase tracking-widest text-brand-orange">Why Choose Xiaroo</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            The XIAROO
+            The Xiaroo
             <br />
             <span className="text-white/70">Advantage</span>
           </h2>
-          <p className="text-gray-400 mt-4 max-w-2xl">We combine Gen Z innovation with AI-powered technology to deliver scalable, maintainable solutions that drive real business results.</p>
+          <p className="text-gray-400 mt-4 max-w-2xl">We combine Gen Z innovation with smart technology to deliver scalable, maintainable solutions that drive real business results.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

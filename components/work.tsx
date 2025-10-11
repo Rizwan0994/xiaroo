@@ -11,7 +11,7 @@ export default function Work() {
   const projects = [
     {
       title: "FINTECH PULSE",
-      subtitle: "AI-Powered Financial Analytics",
+      subtitle: "Advanced Financial Analytics",
       image: "/works/1.webp?height=600&width=800",
       year: "2024",
       description: "Enterprise fintech platform with real-time AI fraud detection, predictive analytics, and automated compliance monitoring. Built for scale with microservices architecture.",
@@ -41,7 +41,7 @@ export default function Work() {
       subtitle: "Adaptive Learning Ecosystem",
       image: "/works/4.webp?height=600&width=800",
       year: "2023",
-      description: "Advanced EdTech platform with AI-powered personalized learning paths, real-time progress tracking, virtual AI tutors, and gamified student engagement features.",
+      description: "Advanced EdTech platform with adaptive personalized learning paths, real-time progress tracking, virtual tutors, and gamified student engagement features.",
       metrics: "25K+ Students | 90% Completion Rate | 40% Better Results",
       technologies: "Vue.js, Python, NLP, WebRTC, Firebase, Analytics"
     },
@@ -63,7 +63,7 @@ export default function Work() {
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 md:mb-0 text-white">
-              AI-Powered
+              Innovative
               <br />
               <span className="text-white/70">Success Stories</span>
             </h2>

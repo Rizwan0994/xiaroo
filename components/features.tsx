@@ -103,7 +103,7 @@ export default function Features() {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            AI-Powered Solutions
+            Digital Solutions
             <br />
             <span className="text-white/70">For Modern Businesses</span>
           </h2>

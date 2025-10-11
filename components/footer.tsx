@@ -23,7 +23,7 @@ export default function Footer() {
                 priority
               />
               <span className="text-white font-bold text-xl md:text-2xl tracking-tighter drop-shadow-2xl">
-                XIAROO<span className="text-brand-orange drop-shadow-lg">.</span>
+                iaroo<span className="text-brand-orange drop-shadow-lg">.</span>
               </span>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-6 pt-8 border-t border-brand-orange/20 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} XIAROO. All rights reserved.</p>
+          <p className="text-gray-300 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} Xiaroo. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-gray-300 hover:text-brand-orange transition-colors text-sm">
               Privacy Policy
