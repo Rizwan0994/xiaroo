@@ -27,18 +27,27 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/ICON PNG-01.png"
-              alt="Logo"
-              width={180}
-              height={180}
-              className="h-8 md:h-10 w-auto"
-              priority
-            />
-            <Link href="/" className="text-white font-bold text-2xl tracking-tighter">
-            IAROO<span className="text-brand-orange">.</span>
-            </Link>
+          <Link href="/" className="flex items-center relative group">
+            {/* Permanent glow - always visible */}
+            <div className="absolute inset-0 bg-gradient-radial from-brand-orange/30 via-brand-orange/15 to-transparent rounded-full blur-lg scale-150"></div>
+            
+            {/* Spotlight effect on hover */}
+            <div className="absolute inset-0 bg-gradient-radial from-brand-orange/50 via-brand-orange/25 to-transparent rounded-full blur-md scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            
+            {/* Logo with enhanced visibility */}
+            <div className="relative z-10 flex items-center">
+              <Image
+                src="/ICON PNG-01.png"
+                alt="Logo"
+                width={40}
+                height={40}
+                className="h-8 md:h-10 w-auto drop-shadow-2xl filter brightness-125 contrast-150"
+                priority
+              />
+              <span className="text-white font-bold text-xl md:text-2xl tracking-tighter drop-shadow-2xl">
+                IAROO<span className="text-brand-orange drop-shadow-lg">.</span>
+              </span>
+            </div>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
