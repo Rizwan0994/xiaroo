@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand colors - Dark Blue primary theme */
+    --background: 218 55% 17%; /* brand-dark #132442 */
+    --foreground: 0 0% 100%; /* white */
+    --card: 218 55% 20%; /* slightly lighter dark blue */
+    --card-foreground: 0 0% 100%; /* white */
+    --popover: 218 55% 20%; /* slightly lighter dark blue */
+    --popover-foreground: 0 0% 100%; /* white */
+    --primary: 22 99% 55%; /* brand-orange #fe701c */
+    --primary-foreground: 0 0% 100%; /* white */
+    --secondary: 218 55% 25%; /* medium dark blue */
+    --secondary-foreground: 0 0% 100%; /* white */
+    --muted: 218 55% 30%; /* lighter dark blue */
+    --muted-foreground: 0 0% 70%; /* light gray */
+    --accent: 22 99% 55%; /* brand-orange #fe701c */
+    --accent-foreground: 0 0% 100%; /* white */
+    --destructive: 0 100% 50%; /* red for errors */
+    --destructive-foreground: 0 0% 100%; /* white */
+    --border: 218 55% 30%; /* lighter dark blue for borders */
+    --input: 218 55% 25%; /* medium dark blue for inputs */
+    --ring: 22 99% 55%; /* brand-orange for focus rings */
+    --radius: 0rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom cursor */
+@media (min-width: 768px) {
+  * {
+    cursor: none;
+  }
+
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s;
+  }
+
+  .custom-cursor.active {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  a,
+  button {
+    cursor: none;
+  }
+
+  a:hover ~ .custom-cursor,
+  button:hover ~ .custom-cursor {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Brutalist typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #132442; /* brand-dark */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #213a62; /* brand-dark-lighter */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fe701c; /* brand-orange */
+}
+
+/* Subtle Orange Glow Effects - Very Minimal */
+.neon-glow {
+  text-shadow: 0 0 2px rgba(254, 112, 28, 0.3);
+}
+
+.neon-line-glow {
+  box-shadow: 0 0 1px rgba(254, 112, 28, 0.2);
+}
+
+.neon-square-glow {
+  box-shadow: 0 0 2px rgba(254, 112, 28, 0.3);
+}
+ 
