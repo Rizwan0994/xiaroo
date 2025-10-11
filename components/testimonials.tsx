@@ -10,21 +10,31 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote:
-        "The minimalist approach perfectly captured our brand essence. Their attention to detail and focus on typography made our digital presence stand out.",
-      author: "Sarah Johnson",
-      role: "Creative Director, Studio Black",
+        "XIAROO transformed our fintech platform with AI-powered fraud detection that caught 99.8% of suspicious transactions. Their Gen Z team understood modern tech stacks and delivered a scalable solution that handles millions of transactions daily. Best investment we've made.",
+      author: "David Martinez",
+      role: "CTO, FinTech Innovations",
+      company: "USA",
     },
     {
       quote:
-        "Working with this team was refreshing. They stripped away all the unnecessary elements and delivered a product that was both beautiful and functional.",
-      author: "Michael Chen",
-      role: "Founder, Monochrome",
+        "Working with XIAROO was a game-changer for our healthcare app. They integrated AI diagnostics that improved accuracy by 40% while maintaining HIPAA compliance. Their agile approach and modern development practices exceeded all our expectations.",
+      author: "Dr. Sarah Williams",
+      role: "CEO, HealthTech Solutions",
+      company: "UK",
     },
     {
       quote:
-        "Their brutalist design philosophy challenged our conventional thinking and resulted in a website that truly captures attention and drives engagement.",
-      author: "Emily Rodriguez",
-      role: "Marketing Lead, Contrast Inc.",
+        "The e-commerce platform XIAROO built for us increased our revenue by 250% in just 6 months. Their AI recommendation engine is incredibly accurate, and the performance optimization reduced our page load time by 65%. Simply outstanding work.",
+      author: "James Thompson",
+      role: "Founder, RetailNext",
+      company: "Australia",
+    },
+    {
+      quote:
+        "XIAROO's AI-powered learning platform revolutionized our EdTech business. Their innovative approach to personalized learning paths and real-time analytics helped us achieve 90% student completion rates. The Gen Z perspective brought fresh ideas we never considered.",
+      author: "Fatima Khan",
+      role: "Director, EduVision",
+      company: "Pakistan",
     },
   ]
 
@@ -51,10 +61,11 @@ export default function Testimonials() {
             <div className="text-xs uppercase tracking-widest text-brand-orange">Testimonials</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            What Our Clients
+            Client Success
             <br />
-            <span className="text-white/70">Say About Us</span>
+            <span className="text-white/70">Stories Worldwide</span>
           </h2>
+          <p className="text-gray-400 mt-4 max-w-2xl">Real results from real clients across USA, UK, Pakistan, and Australia who trusted XIAROO to transform their businesses with AI-powered solutions.</p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
@@ -81,6 +92,7 @@ export default function Testimonials() {
                     <div>
                       <div className="font-bold text-white">{testimonials[activeIndex].author}</div>
                       <div className="text-white/70 text-sm">{testimonials[activeIndex].role}</div>
+                      <div className="text-brand-orange text-xs mt-1">{testimonials[activeIndex].company}</div>
                     </div>
                   </div>
                 </motion.div>

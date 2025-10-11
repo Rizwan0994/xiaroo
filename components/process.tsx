@@ -10,29 +10,28 @@ export default function Process() {
   const steps = [
     {
       number: "01",
-      title: "Discovery",
-      description: "We analyze your needs, goals, and target audience to establish a solid foundation for the project.",
+      title: "Discovery & AI Assessment",
+      description: "We conduct deep-dive analysis of your business needs, technical requirements, and opportunities for AI integration. Our Gen Z team leverages modern tools to map your digital transformation journey.",
     },
     {
       number: "02",
-      title: "Strategy",
-      description: "We develop a comprehensive plan that aligns with your business objectives and user expectations.",
+      title: "Strategy & Architecture",
+      description: "We design scalable, maintainable system architecture with AI-powered features. Our strategy includes tech stack selection, microservices planning, and cloud infrastructure design aligned with your growth goals.",
     },
     {
       number: "03",
-      title: "Design",
-      description: "We create minimalist, brutalist designs that focus on functionality and user experience.",
+      title: "UI/UX & AI Design",
+      description: "We craft intuitive, modern interfaces with AI-enhanced user experiences. Our design process focuses on accessibility, performance, and seamless integration of intelligent features that users love.",
     },
     {
       number: "04",
-      title: "Development",
-      description:
-        "We build your digital product using modern technologies and best practices for optimal performance.",
+      title: "Agile Development",
+      description: "We build your product using cutting-edge technologies, AI/ML models, and industry best practices. Our agile sprints ensure rapid iteration, continuous integration, and regular client feedback loops.",
     },
     {
       number: "05",
-      title: "Launch",
-      description: "We deploy your project and ensure everything works flawlessly across all platforms and devices.",
+      title: "Testing & Deployment",
+      description: "We rigorously test across devices, optimize performance, and deploy to production with zero downtime. Our CI/CD pipelines ensure smooth launches with comprehensive monitoring and post-launch support.",
     },
   ]
 
@@ -51,10 +50,11 @@ export default function Process() {
             <div className="text-xs uppercase tracking-widest text-brand-orange">How We Work</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            Our Process
+            AI-Integrated
             <br />
-            <span className="text-white/90">Step by Step</span>
+            <span className="text-white/90">Development Process</span>
           </h2>
+          <p className="text-gray-400 mt-4 max-w-2xl">From discovery to deployment, our agile workflow combines Gen Z innovation with AI-powered efficiency to deliver scalable, maintainable solutions.</p>
         </motion.div>
 
         <div

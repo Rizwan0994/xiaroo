@@ -7,44 +7,49 @@ import { Check } from "lucide-react"
 export default function Pricing() {
   const [annual, setAnnual] = useState(true)
 
-  const plans = [
+  const valueProps = [
     {
-      name: "Basic",
-      description: "For small projects and individuals",
-      price: annual ? 1900 : 199,
-      features: ["Minimalist design", "Responsive layout", "Basic animations", "1 revision round", "14-day delivery"],
-      cta: "Get Started",
+      name: "Gen Z Innovation",
+      description: "Fresh perspective meets cutting-edge tech",
+      icon: "🚀",
+      features: [
+        "Native digital expertise",
+        "Modern tech stack mastery",
+        "Agile development methodology",
+        "Latest AI/ML frameworks",
+        "Cloud-native architecture"
+      ],
+      cta: "Start Your Project",
       popular: false,
     },
     {
-      name: "Standard",
-      description: "For growing businesses and brands",
-      price: annual ? 3900 : 399,
+      name: "AI-Powered Solutions",
+      description: "Intelligence built into every product",
+      icon: "🤖",
       features: [
-        "Everything in Basic",
-        "Custom brutalist design",
-        "Advanced animations",
-        "3 revision rounds",
-        "Content strategy",
-        "7-day delivery",
+        "Custom AI model integration",
+        "Machine learning pipelines",
+        "Predictive analytics",
+        "Natural language processing",
+        "Computer vision capabilities",
+        "Real-time data processing"
       ],
-      cta: "Get Started",
+      cta: "Get AI Assessment",
       popular: true,
     },
     {
-      name: "Premium",
-      description: "For established companies and enterprises",
-      price: annual ? 7900 : 799,
+      name: "Scalable & Maintainable",
+      description: "Built for growth and long-term success",
+      icon: "⚡",
       features: [
-        "Everything in Standard",
-        "Comprehensive design system",
-        "Custom functionality",
-        "Unlimited revisions",
-        "SEO optimization",
-        "Priority support",
-        "5-day delivery",
+        "Microservices architecture",
+        "Automated CI/CD pipelines",
+        "Comprehensive documentation",
+        "99.9% uptime guarantee",
+        "24/7 monitoring & support",
+        "Regular security updates"
       ],
-      cta: "Contact Us",
+      cta: "Learn More",
       popular: false,
     },
   ]
@@ -61,75 +66,52 @@ export default function Pricing() {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-brand-orange"></div>
-            <div className="text-xs uppercase tracking-widest text-brand-orange">Pricing</div>
+            <div className="text-xs uppercase tracking-widest text-brand-orange">Why Choose XIAROO</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            Simple Pricing
+            The XIAROO
             <br />
-            <span className="text-white/70">No Hidden Fees</span>
+            <span className="text-white/70">Advantage</span>
           </h2>
+          <p className="text-gray-400 mt-4 max-w-2xl">We combine Gen Z innovation with AI-powered technology to deliver scalable, maintainable solutions that drive real business results.</p>
         </motion.div>
 
-        <div className="flex justify-center mb-12">
-          <div className="border-2 border-brand-orange/20 p-1 inline-flex rounded-sm backdrop-blur-sm bg-brand-orange/5">
-            <button
-              onClick={() => setAnnual(true)}
-              className={`px-6 py-2 text-sm transition-all duration-300 ${
-                annual ? "bg-brand-orange text-white font-medium" : "text-gray-300 hover:text-brand-orange"
-              }`}
-            >
-              Annual <span className="text-xs opacity-80">(Save 20%)</span>
-            </button>
-            <button
-              onClick={() => setAnnual(false)}
-              className={`px-6 py-2 text-sm transition-all duration-300 ${
-                !annual ? "bg-brand-orange text-white font-medium" : "text-gray-300 hover:text-brand-orange"
-              }`}
-            >
-              Monthly
-            </button>
-          </div>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {plans.map((plan, index) => (
+          {valueProps.map((prop, index) => (
             <div
               key={index}
               className={`border-2 ${
-                plan.popular ? "border-brand-orange shadow-xl" : "border-brand-orange/20"
-              } p-8 relative bg-gradient-to-br from-brand-orange/8 to-brand-orange/3 backdrop-blur-sm group hover:bg-gradient-to-br hover:from-brand-orange/12 hover:to-brand-orange/6 hover:border-brand-orange/40 transition-all duration-300 shadow-lg`}
+                prop.popular ? "border-brand-orange shadow-xl" : "border-brand-orange/20"
+              } p-8 relative bg-gradient-to-br from-brand-orange/8 to-brand-orange/3 backdrop-blur-sm group hover:bg-gradient-to-br hover:from-brand-orange/12 hover:to-brand-orange/6 hover:border-brand-orange/40 transition-all duration-300 shadow-lg hover:shadow-xl`}
             >
-              {plan.popular && (
+              {prop.popular && (
                 <div className="absolute top-0 right-0 bg-brand-orange text-white text-xs uppercase tracking-widest py-1 px-3 -mt-3 -mr-3 font-medium">
-                  Popular
+                  Core Strength
                 </div>
               )}
-              <h3 className="text-2xl font-bold mb-2 text-white">{plan.name}</h3>
-              <p className="text-white/70 mb-6">{plan.description}</p>
-              <div className="mb-6 flex items-baseline">
-                <span className="text-4xl font-bold text-white">${plan.price}</span>
-                <span className="text-white/70 ml-2">{annual ? "/year" : "/month"}</span>
-              </div>
-              <ul className="space-y-4 mb-8">
-                {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start group">
-                    <Check className="w-5 h-5 mr-2 text-white/60 group-hover:text-white flex-shrink-0 mt-0.5 transition-colors duration-300" />
-                    <span className="text-white/80 group-hover:text-white transition-colors duration-300">{feature}</span>
+              <div className="text-5xl mb-4">{prop.icon}</div>
+              <h3 className="text-2xl font-bold mb-2 text-white">{prop.name}</h3>
+              <p className="text-white/70 mb-6">{prop.description}</p>
+              <ul className="space-y-3 mb-8">
+                {prop.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start">
+                    <Check className="w-5 h-5 mr-2 text-brand-orange flex-shrink-0 mt-0.5" />
+                    <span className="text-white/80">{feature}</span>
                   </li>
                 ))}
               </ul>
               <button
                 className={`w-full py-3 text-sm uppercase tracking-widest transition-all duration-300 ${
-                  plan.popular 
+                  prop.popular 
                     ? "bg-brand-orange text-white hover:bg-brand-orange-light" 
                     : "border-2 border-brand-orange/30 text-white hover:border-brand-orange hover:bg-brand-orange/10"
                 }`}
               >
-                {plan.cta}
+                {prop.cta}
               </button>
               
-              {/* Add subtle highlight for popular plan */}
-              {plan.popular && (
+              {/* Add subtle highlight for popular prop */}
+              {prop.popular && (
                 <div className="absolute inset-0 border-b-2 border-brand-orange opacity-20"></div>
               )}
             </div>

@@ -10,28 +10,40 @@ export default function Work() {
 
   const projects = [
     {
-      title: "BRUTALIST",
-      subtitle: "Digital Platform",
+      title: "FINTECH PULSE",
+      subtitle: "AI-Powered Financial Analytics",
       image: "/works/1.webp?height=600&width=800",
-      year: "2023",
+      year: "2024",
+      description: "Enterprise fintech platform with real-time AI fraud detection, predictive analytics, and automated compliance monitoring. Built for scale with microservices architecture.",
+      metrics: "300% ROI | 99.9% Uptime | 2M+ Transactions Daily",
+      technologies: "React, Node.js, TensorFlow, AWS Lambda, PostgreSQL"
     },
     {
-      title: "MONOCHROME",
-      subtitle: "Brand Identity",
+      title: "MEDTECH AI",
+      subtitle: "Healthcare Intelligence Platform",
       image: "/works/2.webp?height=600&width=800",
-      year: "2023",
+      year: "2024",
+      description: "HIPAA-compliant mobile health platform featuring AI-assisted diagnostics, telemedicine integration, and patient health monitoring with predictive care recommendations.",
+      metrics: "75K+ Active Users | 96% Diagnostic Accuracy | 4.9★ Rating",
+      technologies: "React Native, Python, ML Models, Azure Healthcare API"
     },
     {
-      title: "MINIMAL",
-      subtitle: "Web Experience",
+      title: "RETAIL NEXUS",
+      subtitle: "Intelligent E-Commerce Solution",
       image: "/works/3.webp?height=600&width=800",
-      year: "2022",
+      year: "2023",
+      description: "Next-generation e-commerce platform with AI product recommendations, dynamic pricing engine, intelligent inventory management, and personalized shopping experiences.",
+      metrics: "250% Revenue Growth | 3.2s Page Load | 85% Conversion Boost",
+      technologies: "Next.js, GraphQL, AI/ML, Kubernetes, Redis, MongoDB"
     },
     {
-      title: "CONTRAST",
-      subtitle: "Mobile Application",
+      title: "LEARN AI PRO",
+      subtitle: "Adaptive Learning Ecosystem",
       image: "/works/4.webp?height=600&width=800",
-      year: "2022",
+      year: "2023",
+      description: "Advanced EdTech platform with AI-powered personalized learning paths, real-time progress tracking, virtual AI tutors, and gamified student engagement features.",
+      metrics: "25K+ Students | 90% Completion Rate | 40% Better Results",
+      technologies: "Vue.js, Python, NLP, WebRTC, Firebase, Analytics"
     },
   ]
 
@@ -47,16 +59,16 @@ export default function Work() {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-brand-orange"></div>
-            <div className="text-xs uppercase tracking-widest text-brand-orange">Selected Work</div>
+            <div className="text-xs uppercase tracking-widest text-brand-orange">Portfolio</div>
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 md:mb-0 text-white">
-              Our Latest
+              AI-Powered
               <br />
-              <span className="text-white/70">Projects</span>
+              <span className="text-white/70">Success Stories</span>
             </h2>
-            <button className="border-2 border-white/20 px-6 py-3 text-sm uppercase tracking-widest text-white/80 hover:border-white hover:text-white hover:bg-white/5 transition-all duration-300 flex items-center group">
-              View All Work
+            <button className="border-2 border-brand-orange/30 px-6 py-3 text-sm uppercase tracking-widest text-gray-300 hover:border-brand-orange hover:text-brand-orange hover:bg-brand-orange/5 transition-all duration-300 flex items-center group">
+              View All Projects
               <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300" />
             </button>
           </div>
@@ -90,11 +102,18 @@ export default function Work() {
               </div>
               
               {/* Project title with enhanced styling */}
-              <h3 className="text-2xl font-bold tracking-tighter text-white group-hover:translate-x-2 transition-transform duration-300">{project.title}</h3>
-              <p className="text-white/70 group-hover:text-white/90 transition-colors">{project.subtitle}</p>
+              <h3 className="text-2xl font-bold tracking-tighter text-white group-hover:translate-x-2 transition-transform duration-300 mb-2">{project.title}</h3>
+              <p className="text-white/70 group-hover:text-white/90 transition-colors mb-3">{project.subtitle}</p>
+              <p className="text-sm text-gray-400 mb-2 line-clamp-2">{project.description}</p>
+              
+              {/* Metrics */}
+              <div className="text-xs text-brand-orange mb-2 font-medium">{project.metrics}</div>
+              
+              {/* Technologies */}
+              <div className="text-xs text-gray-500">{project.technologies}</div>
               
               {/* Animated underline on hover */}
-              <div className="h-px w-0 bg-white group-hover:w-20 transition-all duration-300 mt-2"></div>
+              <div className="h-px w-0 bg-brand-orange group-hover:w-20 transition-all duration-300 mt-3"></div>
             </div>
           ))}
         </div>

@@ -45,7 +45,7 @@ export default function Navbar() {
                 priority
               />
               <span className="text-white font-bold text-xl md:text-2xl tracking-tighter drop-shadow-2xl">
-                IAROO<span className="text-brand-orange drop-shadow-lg">.</span>
+                XIAROO<span className="text-brand-orange drop-shadow-lg">.</span>
               </span>
             </div>
           </Link>
@@ -53,25 +53,25 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="#features"
-              className="text-gray-300 hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
+              className="text-white hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
             >
               Features
             </Link>
             <Link
               href="#work"
-              className="text-gray-300 hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
+              className="text-white hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
             >
               Work
             </Link>
             <Link
               href="#process"
-              className="text-gray-300 hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
+              className="text-white hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
             >
               Process
             </Link>
             <Link
               href="#pricing"
-              className="text-gray-300 hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
+              className="text-white hover:text-brand-orange transition-colors text-sm uppercase tracking-widest"
             >
               Pricing
             </Link>
@@ -101,28 +101,28 @@ export default function Navbar() {
             <nav className="flex flex-col space-y-6">
               <Link
                 href="#features"
-                className="text-gray-300 hover:text-brand-orange py-2 text-2xl font-light"
+                className="text-white hover:text-brand-orange py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
                 Features
               </Link>
               <Link
                 href="#work"
-                className="text-gray-300 hover:text-brand-orange py-2 text-2xl font-light"
+                className="text-white hover:text-brand-orange py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
                 Work
               </Link>
               <Link
                 href="#process"
-                className="text-gray-300 hover:text-brand-orange py-2 text-2xl font-light"
+                className="text-white hover:text-brand-orange py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
                 Process
               </Link>
               <Link
                 href="#pricing"
-                className="text-gray-300 hover:text-brand-orange py-2 text-2xl font-light"
+                className="text-white hover:text-brand-orange py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
                 Pricing

@@ -7,44 +7,69 @@ import type { Metadata } from 'next'; // Import Metadata type
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = { // Add Metadata type
-  title: "Mono - MINIMAL BRUTALIST DESIGN",
-  description: "We create minimalist digital experiences that make an impact. Raw, unfiltered, and straight to the point.",
-  generator: "Mohamed Djoudir",
-  // Add manifest and icons metadata
-  manifest: "/site.webmanifest",
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/apple-touch-icon.png", // Assumes apple-touch-icon.png exists in /public
+export const metadata: Metadata = {
+  title: "XIAROO - AI-Powered Software Development Company | Web & Mobile Apps",
+  description: "Leading Gen Z software development company specializing in AI-powered web applications, mobile apps, and scalable digital solutions. Serving USA, UK, Pakistan & Australia.",
+  keywords: "AI software development, custom web applications, mobile app development, software company, Gen Z developers, scalable software solutions, artificial intelligence integration, USA, UK, Pakistan, Australia",
+  authors: [{ name: "XIAROO Team" }],
+  creator: "XIAROO",
+  publisher: "XIAROO",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
-  // Add Open Graph metadata
+  metadataBase: new URL('https://xiaroo.com'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-us',
+      'en-GB': '/en-gb', 
+      'en-PK': '/en-pk',
+      'en-AU': '/en-au',
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: "Mono - MINIMAL BRUTALIST DESIGN",
-    description: "We create minimalist digital experiences that make an impact. Raw, unfiltered, and straight to the point.",
-    url: "https://your-website-url.com", // Replace with your actual website URL
-    siteName: "Mono",
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://xiaroo.com',
+    siteName: 'XIAROO',
+    title: 'XIAROO - AI-Powered Software Development Company',
+    description: 'Leading Gen Z software development company specializing in AI-powered web applications, mobile apps, and scalable digital solutions.',
     images: [
       {
-        url: "/image.png", // Path to your image in the public folder
-        width: 1200, // Optional: Specify image width
-        height: 630, // Optional: Specify image height
-        alt: "Mono Website Preview", // Optional: Alt text for the image
+        url: '/image.png',
+        width: 1200,
+        height: 630,
+        alt: 'XIAROO - AI-Powered Software Development Company',
       },
     ],
-    locale: "en_US", // Optional: Specify locale
-    type: "website", // Optional: Specify content type
   },
-  // Optional: Add Twitter card metadata if needed
   twitter: {
-    card: "summary_large_image",
-    title: "Mono - MINIMAL BRUTALIST DESIGN",
-    description: "We create minimalist digital experiences that make an impact. Raw, unfiltered, and straight to the point.",
-    // creator: "@yourTwitterHandle", // Optional: Your Twitter handle
-    images: ["/image.png"], // Path to your image in the public folder
+    card: 'summary_large_image',
+    title: 'XIAROO - AI-Powered Software Development Company',
+    description: 'Leading Gen Z software development company specializing in AI-powered web applications, mobile apps, and scalable digital solutions.',
+    images: ['/image.png'],
   },
+  verification: {
+    google: 'your-google-verification-code',
+    yandex: 'your-yandex-verification-code',
+    yahoo: 'your-yahoo-verification-code',
+  },
+  category: 'technology',
+  classification: 'Software Development Company',
+  referrer: 'origin-when-cross-origin',
 };
 
 export default function RootLayout({
@@ -52,8 +77,99 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "XIAROO",
+    "url": "https://xiaroo.com",
+    "logo": "https://xiaroo.com/LOGO PNG-01.png",
+    "description": "Leading Gen Z software development company specializing in AI-powered web applications, mobile apps, and scalable digital solutions.",
+    "foundingDate": "2024",
+    "founder": {
+      "@type": "Person",
+      "name": "XIAROO Team"
+    },
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressRegion": "California"
+      },
+      {
+        "@type": "PostalAddress", 
+        "addressCountry": "GB",
+        "addressRegion": "London"
+      },
+      {
+        "@type": "PostalAddress",
+        "addressCountry": "PK", 
+        "addressRegion": "Karachi"
+      },
+      {
+        "@type": "PostalAddress",
+        "addressCountry": "AU",
+        "addressRegion": "Sydney"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-555-XIAROO",
+      "contactType": "customer service",
+      "availableLanguage": ["English"]
+    },
+    "sameAs": [
+      "https://linkedin.com/company/xiaroo",
+      "https://twitter.com/xiaroo",
+      "https://github.com/xiaroo"
+    ],
+    "serviceArea": [
+      {
+        "@type": "Country",
+        "name": "United States"
+      },
+      {
+        "@type": "Country", 
+        "name": "United Kingdom"
+      },
+      {
+        "@type": "Country",
+        "name": "Pakistan"
+      },
+      {
+        "@type": "Country",
+        "name": "Australia"
+      }
+    ]
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "XIAROO",
+    "url": "https://xiaroo.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://xiaroo.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <html lang="en" className="dark" suppressHydrationWarning >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+      </head>
       <body className={`${inter.className} bg-brand-dark mx-auto max-w-[1440px]`}>
         <ThemeProvider
           attribute="class"

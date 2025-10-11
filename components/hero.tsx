@@ -48,26 +48,26 @@ export default function Hero() {
               className="mb-6"
             >
               <div className="inline-block border border-brand-orange px-3 py-1 text-xs uppercase tracking-widest text-brand-orange">
-                Digital Design Studio
+                AI-Powered Software Development
               </div>
             </motion.div>
             <h1>
               <TextGenerateEffect
-                words="MINIMAL"
+                words="NEXT-GEN"
                 className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.2}
               />
               <TextGenerateEffect
-                words="BRUTALIST"
-                className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter text-neutral-400"
+                words="AI-POWERED"
+                className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter text-brand-orange"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.4}
               />
               <TextGenerateEffect
-                words="DESIGN"
+                words="SOLUTIONS"
                 className="text-5xl md:text-7xl lg:text-8xl font-bold m-2 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
@@ -79,10 +79,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-neutral-400 mb-8 max-w-md text-lg"
+              className="text-gray-300 mb-8 max-w-lg text-lg"
             >
-              We create minimalist digital experiences that make an impact. Raw,
-              unfiltered, and straight to the point.
+              Leading Gen Z software development company specializing in AI-powered web applications, 
+              mobile apps, and scalable digital solutions. Serving USA, UK, Pakistan & Australia with cutting-edge technology.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -91,11 +91,11 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <button className="border border-brand-orange px-8 py-3 text-sm uppercase tracking-widest hover:bg-brand-orange hover:text-white transition-colors flex items-center justify-center">
-                View Our Work
+                Start Your Project
                 <ArrowRight className="ml-2 h-4 w-4" />
               </button>
-              <button className="border border-brand-dark-lighter px-8 py-3 text-sm uppercase tracking-widest text-gray-300 hover:border-brand-orange hover:text-white transition-colors">
-                About Us
+              <button className="border border-brand-dark-lighter px-8 py-3 text-sm uppercase tracking-widest text-gray-300 hover:border-brand-orange hover:text-brand-orange transition-colors">
+                Get AI Assessment
               </button>
             </motion.div>
           </div>
@@ -115,7 +115,7 @@ export default function Hero() {
             >
               {/* Background shape - appears first */}
               <motion.div
-                className="absolute -bottom-10 -right-10 w-2/3 h-2/3 border border-neutral-800 bg-neutral-950 z-[-1]"
+                className="absolute -bottom-10 -right-10 w-2/3 h-2/3 border border-brand-orange/30 bg-brand-dark-lighter z-[-1]"
                 initial={{ opacity: 0, x: 10, y: 10 }}
                 animate={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
@@ -128,7 +128,7 @@ export default function Hero() {
 
               {/* Main square container */}
               <motion.div
-                className="aspect-square relative overflow-hidden border border-neutral-800"
+                className="aspect-square relative overflow-hidden border border-brand-orange/40"
                 initial={{ opacity: 0, scale: 0.92 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{
@@ -141,7 +141,7 @@ export default function Hero() {
               >
                 {/* Background gradient */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-neutral-700 to-neutral-900"
+                  className="absolute inset-0 bg-gradient-to-br from-brand-dark-lighter to-brand-dark"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: shapeAnimationDelay + 0.2 }}
@@ -156,25 +156,25 @@ export default function Hero() {
                   >
                     {/* Four lines - animate in sequence */}
                     <motion.div
-                      className="absolute top-0 left-0 w-full h-1 bg-white"
+                      className="absolute top-0 left-0 w-full h-1 bg-brand-orange"
                       initial={{ scaleX: 0, originX: 0 }}
                       animate={{ scaleX: 1 }}
                       transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.4 }}
                     ></motion.div>
                     <motion.div
-                      className="absolute bottom-0 right-0 w-full h-1 bg-white"
+                      className="absolute bottom-0 right-0 w-full h-1 bg-brand-orange"
                       initial={{ scaleX: 0, originX: 1 }}
                       animate={{ scaleX: 1 }}
                       transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.5 }}
                     ></motion.div>
                     <motion.div
-                      className="absolute top-0 right-0 h-full w-1 bg-white"
+                      className="absolute top-0 right-0 h-full w-1 bg-brand-orange"
                       initial={{ scaleY: 0, originY: 0 }}
                       animate={{ scaleY: 1 }}
                       transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.6 }}
                     ></motion.div>
                     <motion.div
-                      className="absolute bottom-0 left-0 h-full w-1 bg-white"
+                      className="absolute bottom-0 left-0 h-full w-1 bg-brand-orange"
                       initial={{ scaleY: 0, originY: 1 }}
                       animate={{ scaleY: 1 }}
                       transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.7 }}
@@ -182,7 +182,7 @@ export default function Hero() {
 
                     {/* Center square - last to appear */}
                     <motion.div
-                      className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border border-neutral-700 flex items-center justify-center"
+                      className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border border-brand-orange/50 flex items-center justify-center"
                       initial={{ opacity: 0, scale: 0.7 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{
@@ -194,13 +194,13 @@ export default function Hero() {
                       }}
                     >
                       <motion.div
-                        className="w-3/4 h-3/4 bg-neutral-900 flex items-center justify-center"
+                        className="w-3/4 h-3/4 bg-brand-dark flex items-center justify-center"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.9 }}
                       >
                         <motion.div
-                          className="w-1/2 h-1/2 bg-white"
+                          className="w-1/2 h-1/2 bg-brand-orange"
                           initial={{ opacity: 0, scale: 0 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{
@@ -230,7 +230,7 @@ export default function Hero() {
             <div className="text-xs uppercase tracking-widest text-gray-300">
               Scroll
             </div>
-            <div className="h-px w-10 bg-brand-dark-lighter"></div>
+            <div className="h-px w-10 bg-brand-orange"></div>
             <div className="text-xs uppercase tracking-widest text-gray-300">
               Discover
             </div>

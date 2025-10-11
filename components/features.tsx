@@ -11,30 +11,30 @@ export default function Features() {
     margin: "0px 0px -25% 0px",
   });
 
-  const features = [
+  const services = [
     {
       icon: <Square className="w-6 h-6" />,
-      title: "Minimalist Design",
+      title: "Web Application Development",
       description:
-        "Clean, uncluttered interfaces that focus on content and functionality without unnecessary elements.",
+        "Custom web applications built with modern frameworks, scalable architecture, and AI integration for optimal performance and user experience.",
     },
     {
       icon: <Circle className="w-6 h-6" />,
-      title: "Brutalist Approach",
+      title: "Mobile App Development",
       description:
-        "Raw, honest design that embraces the digital medium without trying to mimic physical materials.",
+        "Native and cross-platform mobile applications for iOS and Android with cutting-edge features and seamless user interfaces.",
     },
     {
       icon: <Triangle className="w-6 h-6" />,
-      title: "Responsive Layout",
+      title: "AI Solutions Integration",
       description:
-        "Perfectly adapted experiences across all devices, from desktop to mobile, without compromise.",
+        "Custom AI implementations including machine learning models, chatbots, automation, and intelligent data processing solutions.",
     },
     {
       icon: <Hexagon className="w-6 h-6" />,
-      title: "Performance Focus",
+      title: "Product Development",
       description:
-        "Lightning-fast loading times and smooth interactions for optimal user experience.",
+        "End-to-end product development from concept to deployment, ensuring scalable, maintainable, and future-ready solutions.",
     },
   ];
 
@@ -99,13 +99,13 @@ export default function Features() {
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-brand-orange"></div>
             <div className="text-xs uppercase tracking-widest text-brand-orange">
-              Our Approach
+              Our Services
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            Minimalist Design
+            AI-Powered Solutions
             <br />
-            <span className="text-white/70">Maximum Impact</span>
+            <span className="text-white/70">For Modern Businesses</span>
           </h2>
         </motion.div>
 
@@ -115,7 +115,7 @@ export default function Features() {
           animate={isInView ? "visible" : "hidden"}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
-          {features.map((feature, index) => (
+          {services.map((service, index) => (
             <div
               key={index}
             
@@ -124,14 +124,14 @@ export default function Features() {
             >
               <div className="mb-6 text-white/80 group-hover:text-white transition-colors">
                 <div className="bg-brand-orange/10 p-3 inline-block rounded-sm group-hover:bg-brand-orange/20 transition-all duration-300">
-                  {feature.icon}
+                  {service.icon}
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">
-                {feature.title}
+                {service.title}
               </h3>
               <p className="text-white/70 group-hover:text-white/90 transition-colors">
-                {feature.description}
+                {service.description}
               </p>
             </div>
           ))}
