@@ -61,7 +61,7 @@ export default function Hero() {
             <h1>
               <TextGenerateEffect
                 words="NEXT-GEN"
-                className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold m-0 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.2}
@@ -74,7 +74,7 @@ export default function Hero() {
                 <div className="relative z-10">
                   <TextGenerateEffect
                     words="AI-POWERED"
-                    className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter text-brand-orange neon-glow"
+                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold m-0 leading-tight tracking-tighter text-brand-orange neon-glow"
                     duration={0.5}
                     speed={0.2}
                     initialDelay={0.4}
@@ -83,7 +83,7 @@ export default function Hero() {
               </div>
               <TextGenerateEffect
                 words="SOLUTIONS"
-                className="text-5xl md:text-7xl lg:text-8xl font-bold m-2 leading-tight tracking-tighter"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold m-2 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.6}

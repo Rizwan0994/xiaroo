@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="py-7 pb-5 border-t border-brand-orange/20">
-      <div className="container mx-auto px-4 md:px-8">
+    <footer className="py-7 pb-5 border-t border-brand-orange/20 overflow-hidden">
+      <div className="container mx-auto px-4 md:px-8 max-w-full">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 flex items-center relative group">
             {/* Permanent glow - always visible */}
@@ -28,23 +28,23 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-8 md:items-center">
-            <nav className="flex gap-6">
-              <a href="/#features" className="text-gray-300 hover:text-brand-orange transition-colors text-sm" title="Digital Solutions and Services">
+            <nav className="flex flex-wrap gap-3 md:gap-6 justify-center md:justify-start">
+              <a href="/#features" className="text-gray-300 hover:text-brand-orange transition-colors text-sm whitespace-nowrap" title="Digital Solutions and Services">
                 Services
               </a>
-              <a href="/#work" className="text-gray-300 hover:text-brand-orange transition-colors text-sm" title="Portfolio and Case Studies">
+              <a href="/#work" className="text-gray-300 hover:text-brand-orange transition-colors text-sm whitespace-nowrap" title="Portfolio and Case Studies">
                 Portfolio
               </a>
-              <a href="/#process" className="text-gray-300 hover:text-brand-orange transition-colors text-sm" title="AI-Integrated Development Process">
+              <a href="/#process" className="text-gray-300 hover:text-brand-orange transition-colors text-sm whitespace-nowrap" title="AI-Integrated Development Process">
                 Process
               </a>
-              <a href="/#pricing" className="text-gray-300 hover:text-brand-orange transition-colors text-sm" title="Why Choose Xiaroo">
+              <a href="/#pricing" className="text-gray-300 hover:text-brand-orange transition-colors text-sm whitespace-nowrap" title="Why Choose Xiaroo">
                 Why Choose Us
               </a>
-              <a href="/#testimonials" className="text-gray-300 hover:text-brand-orange transition-colors text-sm" title="Client Success Stories">
+              <a href="/#testimonials" className="text-gray-300 hover:text-brand-orange transition-colors text-sm whitespace-nowrap" title="Client Success Stories">
                 Testimonials
               </a>
-              <a href="/#contact" className="text-gray-300 hover:text-brand-orange transition-colors text-sm" title="Get In Touch">
+              <a href="/#contact" className="text-gray-300 hover:text-brand-orange transition-colors text-sm whitespace-nowrap" title="Get In Touch">
                 Contact
               </a>
             </nav>
